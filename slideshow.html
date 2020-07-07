@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Risoprints made by Ellis Tolsma">
+  <meta name="author" content="Ellis Tolsma">
+
+  <title>Riso</title>
+
+  <!-- Custom styles for this template -->
+  <link href="slideshow.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home" class="active"><img src="items/work2.png" id="titelklein"></a>
+        <div id="myLinks">
+          <a href="aboutme.html">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="lijstje">
+        <img src="items/work.png" id="titel">
+
+        <ul>
+          <li>home</li>
+          <li><a href="aboutme.html">about me</a></li>
+          <li><a href="https://www.shop.ellistolsma.nl/"target="_blank">shop</li></a>
+          <li><a href="start2.html">  back </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="doosje">
+        <div><img src="work/risoprints/bauhaus.jpg" class="afbeelding lang" alt="landschap kleur">
+          <div class="captie"> <br><h1> BAUHAUS</br></h1> A risoprint based on a  bauhaus costume </div>
+        </div>
+        <div><img src="work/risoprints/beep.png" class="afbeelding lang" alt="landschap kleur"></div>
+        <div><img src="work/kostuums/blueback.png"class="afbeelding breed" alt="landschap kleur"></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="js/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="js/slick/slick/slick.js"></script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+<!--script - slick -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.doosje').slick({
+    dots:true,
+    arrows:true,
+    autoplay:false,
+    infinite:true,
+    slidesToShow: 1,
+    slidestoScroll:0,
+    prevArrow:"<img class=' prev slick-prev' src='items/left.png'>",
+    nextArrow:"<img class='next slick-next' src='items/right.png'>",
+  });
+});
+</script>
+
+
+
+
+</html>

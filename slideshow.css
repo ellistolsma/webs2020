@@ -1,0 +1,264 @@
+body {
+max-height:100vh;
+max-width: 100%;
+height:100%;
+color:#605c6e !important;
+font-family:"Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif !important;
+font-weight: bolder !important;
+margin: 0;
+padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;}
+
+.topnav {
+  display:none;
+}
+
+.grid-container {
+  max-width:100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:.18fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   'sidebar main';
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  background-image: url("papier/sidebar.png");
+  background-repeat: repeat-y;
+  background-position: right;
+  text-decoration: none;
+}
+
+.main {
+  grid-area: main;
+}
+
+.grid-container > div {
+  font-size:17px;
+  text-decoration: none;
+}
+
+
+/* sidebar */
+.lijstje {
+  margin-left: auto;
+  margin-right: auto;
+  margin-left:25px;
+}
+
+#titel {
+  margin-left:-10px;
+  margin-top:20px;
+  margin-bottom:50px;
+  width: 110px;
+}
+
+a {
+  text-decoration: none !important;
+  color:#605c6e !important;
+}
+
+a:hover {
+  color:#b35771 !important;
+}
+
+li {
+  padding-bottom:20px;
+}
+
+ul {
+  margin: 0;
+  padding:0;
+  list-style-type: none;
+}
+
+.dropbtn {
+  background-color: #ffffff00;
+  color: inherit !important;
+  left:0;
+  font-weight: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  padding-bottom:10px;
+  padding-left: 0px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  border:none;
+  text-decoration: none;
+  outline: none;
+}
+
+.dropdown-content {
+  display: none;
+  z-index: 1;
+
+}
+
+.show {display: block;}
+
+#arrow {
+  max-width:14%;
+  padding-left:5px;
+}
+
+/* slideshow */
+.doosje {
+  padding-top:60px;
+  padding-bottom:30px;
+  width:1100px;
+  margin-left:auto;
+  margin-right:auto;
+  display:absolute;
+  justify-content:center;
+  align-items:center;
+}
+
+.afbeelding {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.lang {
+  width:450px;
+}
+
+.breed {
+  height:500px;
+  padding-top: 60px;
+}
+
+
+h1 {
+  font-size: 15px !important;
+  font-weight: bolder !important;
+}
+
+.captie{
+font-weight: normal;
+  top:0;
+  width:3%;
+ text-overflow: clip;
+ text-align:left;
+  position: absolute;
+  z-index: 2;
+}
+
+
+@media screen and (max-width: 1025px) {
+
+body {
+    max-width:100%;
+ }
+
+  .grid-container {
+    max-width:100%;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+     'sidebar'
+     'main';
+
+  }
+  .main {
+    width:100%;
+  }
+
+  .doosje {
+    width:300px;
+  }
+
+
+/*TOPNAVVVV MOBIEL */
+.mobile-container {
+  max-width: 100%;
+}
+
+#titelklein {
+  width:20%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-image: url("papier/top.png");
+  background-position:bottom;
+  background-size:cover;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+    margin-bottom:25px;
+}
+
+.topnav a {
+  padding: 14px;
+  display: block;
+  font-size: 15px;
+  line-height: normal;
+  color: #686875!important;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 30px;
+  margin-top:5px;
+}
+
+.topnav a:hover {
+color: #b35771!important;
+}
+
+.active {
+  color: white;
+}
+
+.topnav {
+  display:block;
+}
+
+/* topnav gone */
+  .sidebar {
+    display:none;
+  }
+
+  .lijstje {
+    display:flex;
+    align-items:center;
+overflow: visible;
+z-index: 1;
+  }
+
+
+  li {
+    display: inline;
+  }
+
+  #titel {
+    margin-left:-10px;
+    margin-right: 30px;
+    margin-top:20px;
+    margin-bottom:50px;
+    width: 80px;
+  }
+
+}
+
+
+@media screen and (max-width: 1025px) {
+
+
+}
